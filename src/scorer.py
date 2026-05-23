@@ -45,7 +45,7 @@ def json_features(model, feature_columns, path_to_file):
     with open(path_to_file, "w", encoding="utf-8") as json_file:
         json.dump(top5, json_file, indent=4)
 
-    logger.info(f"Файл с топ-5 признаками сохранен: {path_to_file}")
+    logger.info("Файл с топ-5 признаками сохранен")
 
     return path_to_file
 
@@ -76,6 +76,6 @@ def plot_density(y_pred, path_to_file):
     plt.savefig(path_to_file, dpi=300)
     plt.close()
 
-    logger.info(f"Файл с распределением предсказанных вероятностей сохранен: {path_to_file}")
+    logger.info("Файл с распределением предсказанных вероятностей сохранен")
 
     return path_to_file
