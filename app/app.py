@@ -45,7 +45,7 @@ class ProcessingService:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             base_filename = os.path.splitext(os.path.basename(file_path))[0]
 
-            output_filename = f"predictions_{timestamp}_{base_filename}"
+            output_filename = f"predictions_{timestamp}_{base_filename}.csv"
             submission.to_csv(os.path.join(self.output_dir, output_filename), index=False)
             logger.info("Predictions saved to: %s", output_filename)
 
