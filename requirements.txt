@@ -1,0 +1,8 @@
+category_encoders==2.9.0
+joblib==1.4.2
+matplotlib==3.10.9
+pandas==3.0.3
+scikit-learn==1.6.1
+seaborn==0.13.2
+xgboost==3.0.4
+watchdog==4.0.2
